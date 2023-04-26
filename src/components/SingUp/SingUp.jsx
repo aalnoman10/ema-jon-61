@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Login.css'
 
-const Login = () => {
+const SingUp = () => {
     return (
         <div className='form-container'>
-            <h2 className='text-center'>Login</h2>
+            <h2 className='text-center'>Sing Up</h2>
             <form className="form">
                 <div className="form-control">
                     <label htmlFor="email">Email</label>
@@ -15,9 +14,13 @@ const Login = () => {
                     <label htmlFor="password">Password</label>
                     <input type="password" name='password' className='password' required />
                 </div>
+                <div className="form-control">
+                    <label htmlFor="password">Confirm Password</label>
+                    <input type="password" name='confirm' className='password' required />
+                </div>
                 <button className='btn login' type="submit">Login</button>
             </form>
-            <small className='text-center'>New to Ema Jon ?<Link to='/sing-up'>Sing Up</Link></small>
+            <small className='text-center'>Already have an Account<Link to='/login'>Login</Link></small>
             <div className="hr-gr">
                 <hr /><p>or</p><hr />
             </div>
@@ -26,4 +29,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default SingUp;

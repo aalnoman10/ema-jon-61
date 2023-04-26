@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+.form-container {
+    width: 50%;
+    padding: 1rem 2rem;
+    margin: 5rem auto;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+small {
+    display: block;
+    margin: 5px auto;
+}
+
+.email,
+.password {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 0.4rem 0;
+    font-size: medium;
+}
+
+.btn.login {
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #ffe9c3;
+}
+
+.hr-gr {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.hr-gr hr {
+    flex-basis: 50%;
+    height: 1px;
+    background-color: gray;
+    border: 0;
+}
+
+.btn.google {
+    background-color: rgba(255, 233, 195, 0.3);
+    width: 100%;
+    border: 1px solid rgb(252, 216, 155);
+}
